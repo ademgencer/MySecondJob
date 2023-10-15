@@ -30,10 +30,10 @@ public class Driver {
         if (driver == null) {
 
             if (browser == Browsers.EDGE) {
-                WebDriverManager.edgedriver().setup();
+                //WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
             } else {
-                WebDriverManager.chromedriver().setup();
+                //WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--remote-allow-origins=*");
                 driver = new ChromeDriver(options);
